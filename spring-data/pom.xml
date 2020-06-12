@@ -18,6 +18,8 @@
         <module>spring-data-multi</module>
         <module>spring-data-druid</module>
         <module>spring-data-jdbc</module>
+        <module>spring-data-transaction</module>
+        <module>spring-data-transaction-declarative</module>
     </modules>
 
     <properties>

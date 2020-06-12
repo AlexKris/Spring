@@ -29,12 +29,12 @@ public class FooDao {
     }
 
     public void listData() {
-        log.info("Count: {}", jdbcTemplate.queryForObject("select count(*) from foo;", Long.class));
+        log.info("Count: {}", jdbcTemplate.queryForObject("select count(*) from foo", Long.class));
 
         List<String> list = jdbcTemplate.queryForList("select bar from foo", String.class);
         list.forEach(s -> log.info("Bar: {}", s));
 
-        List<Foo> fooList = jdbcTemplate.query("select * from foo;",
+        List<Foo> fooList = jdbcTemplate.query("select * from foo",
                 (rs, rowNum) -> Foo.builder().id(rs.getLong(1)).bar(rs.getString(2)).build());
         fooList.forEach(f -> log.info("Foo: {}", f));
     }
