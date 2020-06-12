@@ -17,6 +17,7 @@
         <module>spring-data-datasource</module>
         <module>spring-data-multi</module>
         <module>spring-data-druid</module>
+        <module>spring-data-jdbc</module>
     </modules>
 
     <properties>
