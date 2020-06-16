@@ -20,6 +20,7 @@
         <module>spring-data-jdbc</module>
         <module>spring-data-transaction</module>
         <module>spring-data-transaction-declarative</module>
+        <module>spring-data-errorhandle</module>
     </modules>
 
     <properties>
