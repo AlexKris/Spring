@@ -10,7 +10,7 @@
     <artifactId>spring-data-datasource</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>spring-data-datasource</name>
-    <description>Demo project for Spring Boot</description>
+    <description>连接数据库</description>
 
     <properties>
         <java.version>1.8</java.version>

@@ -10,7 +10,7 @@
     <artifactId>spring-data-multi</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>spring-data-multi</name>
-    <description>Demo project for Spring Boot</description>
+    <description>多数据源</description>
 
     <properties>
         <java.version>1.8</java.version>

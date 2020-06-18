@@ -8,4 +8,10 @@ public interface FooService {
     void insertThenRollback() throws RollbackException;
 
     void invokeInsertThenRollback() throws RollbackException;
+
+    void invokeSupInsertThenRollback() throws RollbackException;
+
+    void insertThenRollbackWithPropagation() throws RollbackException;
+
+    void invokeInsertThenRollbackWithPropagation() throws Exception;
 }

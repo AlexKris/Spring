@@ -1,6 +1,5 @@
 package com.spring.declarative;
 
-import com.spring.declarative.exception.RollbackException;
 import com.spring.declarative.service.FooService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +30,7 @@ public class SpringDataTransactionDeclarativeApplication implements CommandLineR
                 jdbcTemplate.queryForObject("select count(*) from foo where bar = 'AAA'", Long.class));
         try {
             fooService.insertThenRollback();
-        } catch (RollbackException e) {
+        } catch (Exception e) {
             log.info("BBB {}",
                     jdbcTemplate.queryForObject("select count(*) from foo where bar = 'BBB'", Long.class));
         }
@@ -41,9 +40,22 @@ public class SpringDataTransactionDeclarativeApplication implements CommandLineR
             由于只是调用了有事务的方法，此方法本身没有事务，事务没有被回滚，没有启动真正的事务，只是使用了数据库的隐式事务
              */
             fooService.invokeInsertThenRollback();
-        } catch (RollbackException e) {
+        } catch (Exception e) {
             log.info("BBB {}",
                     jdbcTemplate.queryForObject("select count(*) from foo where bar = 'BBB'", Long.class));
         }
+
+        try {
+            fooService.invokeSupInsertThenRollback();
+        } catch (Exception e) {
+            log.info("BBB {}",
+                    jdbcTemplate.queryForObject("select count(*) from foo where bar = 'BBB'", Long.class));
+        }
+
+        fooService.invokeInsertThenRollbackWithPropagation();
+        log.info("CCC {}",
+                jdbcTemplate.queryForObject("select count(*) from foo where bar = 'CCC'", Long.class));
+        log.info("DDD {}",
+                jdbcTemplate.queryForObject("select count(*) from foo where bar = 'DDD'", Long.class));
     }
 }

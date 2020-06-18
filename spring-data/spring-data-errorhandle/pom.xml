@@ -10,7 +10,7 @@
     <artifactId>spring-data-errorhandle</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>spring-data-errorhandle</name>
-    <description>Demo project for Spring Boot</description>
+    <description>spring jdbc异常处理</description>
 
     <properties>
         <java.version>1.8</java.version>
