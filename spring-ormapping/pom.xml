@@ -16,6 +16,8 @@
     <modules>
         <module>spring-ormapping-jpa</module>
         <module>spring-ormapping-jpaext</module>
+        <module>spring-ormapping-mybatis</module>
+        <module>spring-ormapping-mybatis-generator</module>
     </modules>
 
     <properties>
