@@ -18,7 +18,6 @@
     <modules>
         <module>spring-start</module>
         <module>spring-data</module>
-        <module>spring-ormapping</module>
     </modules>
 
     <properties>
