@@ -2,15 +2,10 @@ package com.spring.generator.mapper;
 
 import com.spring.generator.entity.Coffee;
 import com.spring.generator.entity.CoffeeExample;
-import java.util.List;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.ResultMap;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.SelectKey;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.session.RowBounds;
+
+import java.util.List;
 
 public interface CoffeeMapper {
     /**
@@ -36,8 +31,8 @@ public interface CoffeeMapper {
      * @mbg.generated Mon Jun 22 16:15:13 CST 2020
      */
     @Delete({
-        "delete from t_coffee",
-        "where id = #{id,jdbcType=BIGINT}"
+            "delete from t_coffee",
+            "where id = #{id,jdbcType=BIGINT}"
     })
     int deleteByPrimaryKey(Long id);
 
@@ -48,12 +43,12 @@ public interface CoffeeMapper {
      * @mbg.generated Mon Jun 22 16:15:13 CST 2020
      */
     @Insert({
-        "insert into t_coffee (name, price, ",
-        "create_time, update_time)",
-        "values (#{name,jdbcType=VARCHAR}, #{price,jdbcType=BIGINT,typeHandler=com.spring.generator.handler.MoneyTypeHandler}, ",
-        "#{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})"
+            "insert into t_coffee (name, price, ",
+            "create_time, update_time)",
+            "values (#{name,jdbcType=VARCHAR}, #{price,jdbcType=BIGINT,typeHandler=com.spring.generator.handler.MoneyTypeHandler}, ",
+            "#{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})"
     })
-    @SelectKey(statement="CALL IDENTITY()", keyProperty="id", before=false, resultType=Long.class)
+    @SelectKey(statement = "CALL IDENTITY()", keyProperty = "id", before = false, resultType = Long.class)
     int insert(Coffee record);
 
     /**
@@ -87,10 +82,10 @@ public interface CoffeeMapper {
      * @mbg.generated Mon Jun 22 16:15:13 CST 2020
      */
     @Select({
-        "select",
-        "id, name, price, create_time, update_time",
-        "from t_coffee",
-        "where id = #{id,jdbcType=BIGINT}"
+            "select",
+            "id, name, price, create_time, update_time",
+            "from t_coffee",
+            "where id = #{id,jdbcType=BIGINT}"
     })
     @ResultMap("com.spring.generator.mapper.CoffeeMapper.BaseResultMap")
     Coffee selectByPrimaryKey(Long id);
@@ -126,12 +121,12 @@ public interface CoffeeMapper {
      * @mbg.generated Mon Jun 22 16:15:13 CST 2020
      */
     @Update({
-        "update t_coffee",
-        "set name = #{name,jdbcType=VARCHAR},",
-          "price = #{price,jdbcType=BIGINT,typeHandler=com.spring.generator.handler.MoneyTypeHandler},",
-          "create_time = #{createTime,jdbcType=TIMESTAMP},",
-          "update_time = #{updateTime,jdbcType=TIMESTAMP}",
-        "where id = #{id,jdbcType=BIGINT}"
+            "update t_coffee",
+            "set name = #{name,jdbcType=VARCHAR},",
+            "price = #{price,jdbcType=BIGINT,typeHandler=com.spring.generator.handler.MoneyTypeHandler},",
+            "create_time = #{createTime,jdbcType=TIMESTAMP},",
+            "update_time = #{updateTime,jdbcType=TIMESTAMP}",
+            "where id = #{id,jdbcType=BIGINT}"
     })
     int updateByPrimaryKey(Coffee record);
 }
