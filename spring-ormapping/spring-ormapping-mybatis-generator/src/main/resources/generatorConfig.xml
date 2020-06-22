@@ -4,6 +4,8 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
+    <classPathEntry location="F:\Maven\Repository\mysql\mysql-connector-java\8.0.20\mysql-connector-java-8.0.20.jar"/>
+
     <context id="H2Tables" targetRuntime="MyBatis3">
         <plugin type="org.mybatis.generator.plugins.FluentBuilderMethodsPlugin"/>
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
@@ -17,19 +19,19 @@
         </jdbcConnection>
 
         <javaModelGenerator targetPackage="com.spring.generator.entity"
-                            targetProject="./src/main/java">
+                            targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="mapper"
-                         targetProject="./src/main/resources/mapper">
+                         targetProject="src/main/resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
         <javaClientGenerator type="MIXEDMAPPER"
                              targetPackage="com.spring.generator.mapper"
-                             targetProject="./src/main/java">
+                             targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
