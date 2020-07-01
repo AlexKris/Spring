@@ -16,6 +16,7 @@
     <modules>
         <module>spring-nosql-mongodb</module>
         <module>spring-nosql-cache</module>
+        <module>spring-nosql-cache-redis</module>
     </modules>
 
     <properties>
