@@ -49,6 +49,8 @@ public class SpringOrmappingJpaApplication implements CommandLineRunner {
         coffeeRepository.save(latte);
         log.info("Coffee: {}", latte);
 
+        log.info("espresso: {}", coffeeRepository.getCoffeeByCoffeeName("espresso"));
+
         CoffeeOrder order = CoffeeOrder.builder()
                 .customer("Li Lei")
                 .items(Collections.singletonList(espresso))
