@@ -49,7 +49,10 @@ public class SpringOrmappingJpaApplication implements CommandLineRunner {
         coffeeRepository.save(latte);
         log.info("Coffee: {}", latte);
 
-        log.info("espresso: {}", coffeeRepository.getCoffeeByCoffeeName("espresso"));
+        log.info("findCoffeeByNameCustomer: {}", coffeeRepository.findCoffeeByNameCustomer("espresso"));
+        log.info("findOrderByIdDescCustomer: {}", coffeeRepository.findOrderByIdDescCustomer());
+        log.info("findCoffeeLikeNameCustomer: {}", coffeeRepository.findCoffeeLikeNameCustomer("lat"));
+        log.info("findCoffeeLikeNameCustomer2: {}", coffeeRepository.findCoffeeLikeNameCustomer2("at"));
 
         CoffeeOrder order = CoffeeOrder.builder()
                 .customer("Li Lei")
