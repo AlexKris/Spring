@@ -7,18 +7,18 @@
         <artifactId>spring</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>spring-ormapping</artifactId>
+    <artifactId>spring-orm</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>spring-ormapping</name>
+    <name>spring-orm</name>
     <description>or mapping</description>
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-ormapping-jpa</module>
-        <module>spring-ormapping-jpaext</module>
-        <module>spring-ormapping-mybatis</module>
-        <module>spring-ormapping-mybatis-generator</module>
-        <module>spring-ormapping-mybatis-pagehelper</module>
+        <module>spring-orm-jpa</module>
+        <module>spring-orm-jpa-ext</module>
+        <module>spring-orm-mybatis</module>
+        <module>spring-orm-mybatis-generator</module>
+        <module>spring-orm-mybatis-page-helper</module>
     </modules>
 
     <properties>

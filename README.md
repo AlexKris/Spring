@@ -10,11 +10,11 @@
     5. spring-data-transaction spring事务
     5. spring-data-transaction-declarative spring声明式事务
     6. spring-data-errorhandle jdbc异常处理
-4. spring-ormapping or mapping 关系型数据库项目
-    1. spring-ormapping-jpa spring data jpa
-    2. spring-ormapping-jpaext spring data jpa 扩展(实体抽象出基类)
-    3. spring-ormapping-mybatis mybatis
-    4. spring-ormapping-mybatis-generator mybatis generator
-    5. spring-ormapping-mybatis-pagehelper mybatis pageHelper
+4. spring-orm or mapping 关系型数据库项目
+    1. spring-orm-jpa spring data jpa
+    2. spring-orm-jpa-ext spring data jpa 扩展(实体抽象出基类)
+    3. spring-orm-mybatis mybatis
+    4. spring-orm-mybatis-generator mybatis generator
+    5. spring-orm-mybatis-page-helper mybatis pageHelper
 5. spring-nosql no sql 非关系型数据库项目
     1. spring-nosql-mongodb mongodb

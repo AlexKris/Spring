@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.spring</groupId>
-        <artifactId>spring-ormapping</artifactId>
+        <artifactId>spring-orm</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>spring-ormapping-jpaext</artifactId>
+    <artifactId>spring-orm-jpa</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>spring-ormapping-jpaext</name>
-    <description>string data jpa ext</description>
+    <name>spring-orm-jpa</name>
+    <description>spring data jpa</description>
 
     <properties>
         <java.version>1.8</java.version>

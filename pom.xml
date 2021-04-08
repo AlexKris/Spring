@@ -18,7 +18,7 @@
     <modules>
         <module>spring-start</module>
         <module>spring-data</module>
-        <module>spring-ormapping</module>
+        <module>spring-orm</module>
         <module>spring-cafe</module>
         <module>spring-nosql</module>
         <module>spring-reactive</module>
