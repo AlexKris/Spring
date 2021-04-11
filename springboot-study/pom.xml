@@ -12,16 +12,16 @@
     <artifactId>springboot-study</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>springboot-study</name>
-    <description>Study project for Spring Boot</description>
+    <description>Study project for Springboot</description>
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-start</module>
-        <module>spring-data</module>
-        <module>spring-orm</module>
-        <module>spring-cafe</module>
-        <module>spring-nosql</module>
-        <module>spring-reactive</module>
+        <module>springboot-start</module>
+        <module>springboot-data</module>
+        <module>springboot-orm</module>
+        <module>springboot-cafe</module>
+        <module>springboot-nosql</module>
+        <module>springboot-reactive</module>
     </modules>
 
     <properties>

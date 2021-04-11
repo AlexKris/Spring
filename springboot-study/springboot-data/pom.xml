@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.spring</groupId>
+        <artifactId>springboot-study</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>springboot-data</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>springboot-data</name>
+    <description>Demo project for Springboot with Database</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>springboot-data-datasource</module>
+        <module>springboot-data-multi</module>
+        <module>springboot-data-druid</module>
+        <module>springboot-data-jdbc</module>
+        <module>springboot-data-transaction</module>
+        <module>springboot-data-transaction-declarative</module>
+        <module>springboot-data-error-handle</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+</project>
