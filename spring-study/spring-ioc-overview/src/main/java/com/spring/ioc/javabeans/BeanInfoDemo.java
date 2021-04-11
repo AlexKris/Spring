@@ -8,6 +8,8 @@ import java.util.stream.Stream;
 
 /**
  * {@link java.beans.BeanInfo} 示例
+ *
+ * @author chris
  */
 public class BeanInfoDemo {
     public static void main(String[] args) throws IntrospectionException {

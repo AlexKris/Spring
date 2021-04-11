@@ -4,6 +4,8 @@ package com.spring.ioc.javabeans;
  * 描述人的 POJO 类
  * Setter / Getter 方法
  * 可写方法(Writable) / 可读方法(Readable)
+ *
+ * @author chris
  */
 public class Person {
 
